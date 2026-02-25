@@ -89,12 +89,6 @@ def create_ui():
 
     with gr.Blocks(
         title="Career Assistant — Egemen ÇAMÖZÜ",
-        theme=gr.themes.Soft(
-            primary_hue="indigo",
-            secondary_hue="slate",
-            font=gr.themes.GoogleFont("Inter"),
-        ),
-        css=CUSTOM_CSS,
     ) as ui:
 
         # ─── Header ──────────────────────────────────
@@ -105,37 +99,32 @@ def create_ui():
         )
 
         # ─── Main ────────────────────────────────────
+        chatbot = gr.Chatbot(
+            label="Conversation",
+            height="70vh",
+        )
+
+        with gr.Group():
+            with gr.Row():
+                message_input = gr.Textbox(
+                    show_label=False,
+                    placeholder="Paste an employer message here...",
+                    scale=5,
+                    lines=2,
+                )
+                send_btn = gr.Button("Send", variant="primary", scale=1, elem_classes="send-btn")
+
         with gr.Row():
-            with gr.Column(scale=3):
-                chatbot = gr.Chatbot(
-                    label="Conversation",
-                    height=500,
-                    type="messages",
-                    show_copy_button=True,
-                )
+            example_btn1 = gr.Button("📩 Interview Invitation", elem_classes="scenario-btn")
+            example_btn2 = gr.Button("💻 Technical Question", elem_classes="scenario-btn")
+            example_btn3 = gr.Button("⚠️ Tricky / Unknown Question", elem_classes="scenario-btn")
 
-                with gr.Group():
-                    with gr.Row():
-                        message_input = gr.Textbox(
-                            show_label=False,
-                            placeholder="Paste an employer message here...",
-                            scale=5,
-                            lines=2,
-                        )
-                        send_btn = gr.Button("Send", variant="primary", scale=1, elem_classes="send-btn")
-
-            with gr.Column(scale=1, elem_classes="side-section"):
-                gr.Markdown("### Try a scenario")
-                example_btn1 = gr.Button("📩 Interview Invitation", elem_classes="scenario-btn")
-                example_btn2 = gr.Button("💻 Technical Question", elem_classes="scenario-btn")
-                example_btn3 = gr.Button("⚠️ Tricky / Unknown Question", elem_classes="scenario-btn")
-
-                gr.Markdown("### About")
-                gr.Markdown(
-                    "This agent reads your CV & LinkedIn, drafts a professional reply, "
-                    "self-evaluates it on a 1–10 scale, and revises if needed. "
-                    "You get an email when a response is ready or a question needs your attention."
-                )
+        with gr.Accordion("ℹ️ About", open=False):
+            gr.Markdown(
+                "This agent reads your CV & LinkedIn, drafts a professional reply, "
+                "self-evaluates it on a 1–10 scale, and revises if needed. "
+                "You get an email when a response is ready or a question needs your attention."
+            )
 
         gr.Markdown(
             "Egemen ÇAMÖZÜ · 20220808076 · Akdeniz University",
@@ -192,4 +181,12 @@ def create_ui():
 
 if __name__ == "__main__":
     ui = create_ui()
-    ui.launch(inbrowser=True)
+    ui.launch(
+        inbrowser=True,
+        theme=gr.themes.Soft(
+            primary_hue="indigo",
+            secondary_hue="slate",
+            font=gr.themes.GoogleFont("Inter"),
+        ),
+        css=CUSTOM_CSS,
+    )

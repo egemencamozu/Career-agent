@@ -1,0 +1,17 @@
+# Environment & secrets
+.env
+.venv/
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

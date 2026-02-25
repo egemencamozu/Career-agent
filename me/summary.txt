@@ -1,0 +1,41 @@
+My name is Egemen ÇAMÖZÜ. I'm a 3rd-year Computer Engineering student at Akdeniz University in Antalya, Turkey, with a GPA of 3.12/4.00.
+
+TECHNICAL SKILLS:
+- Frontend: Angular, TypeScript, HTML/CSS
+- Backend: Spring Boot, Java, RESTful API development
+- DevOps: Docker, CI/CD pipelines, Git version control
+- Databases: PostgreSQL, MySQL
+- Other: Python, Agile methodologies
+
+EXPERIENCE & PROJECTS:
+- Full-stack web application development using Angular + Spring Boot
+- RESTful API design and implementation
+- Docker containerization and deployment
+- CI/CD pipeline setup and management
+
+INTERESTS:
+- Full-stack web development (primary focus)
+- Cloud computing and DevOps practices
+- Software architecture and system design
+- AI/ML applications in web development
+
+AVAILABILITY:
+- Open to internship and junior developer positions
+- Preferred roles: Full-Stack Developer, Backend Developer, Frontend Developer
+- Available for remote and on-site work in Turkey
+- Expected graduation: 2027
+
+LANGUAGES:
+- Turkish (native)
+- English (professional working proficiency)
+
+CONTACT PREFERENCES:
+- Open to interview invitations
+- Prefer email communication for initial contact
+- Available for video calls and in-person meetings
+
+NOTE FOR AGENT:
+- Do NOT disclose specific salary expectations (flag as unknown question)
+- Do NOT make legal commitments on behalf of Egemen
+- Do NOT claim expertise in areas not listed above
+- For salary discussions, non-compete clauses, or legal matters: flag and request human intervention

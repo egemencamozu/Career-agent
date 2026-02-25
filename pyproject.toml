@@ -1,0 +1,14 @@
+[project]
+name = "career-assistant-agent"
+version = "1.0.0"
+description = "AI-powered Career Assistant Agent that handles employer communications"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "gradio>=5.22.0",
+    "langchain-openai>=0.3.9",
+    "langgraph>=0.3.18",
+    "pypdf>=5.4.0",
+    "python-dotenv>=1.0.1",
+    "pydantic>=2.0.0",
+]
